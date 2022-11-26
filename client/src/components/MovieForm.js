@@ -22,8 +22,16 @@ function MovieForm() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(formData),
+    }).then((response) => console.log(response));
+    e.preventDefault();
+    fetch("/movies", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
     })
-      .then((response) => response.json())
+      // .then((response) => response.json())
       .then((newMovie) => console.log(newMovie));
   }
 
