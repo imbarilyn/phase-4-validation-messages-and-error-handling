@@ -5,7 +5,7 @@
 - Display validation messages on the frontend
 - Use HTTP status codes to interpret server response
 
-## Introduction
+## Introduction to the lessons
 
 In previous lessons, we learned how to use Active Record to perform server-side
 validations. Now, let's see how we can use those error messages to display
